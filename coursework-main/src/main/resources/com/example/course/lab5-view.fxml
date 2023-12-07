@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="767.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.course.Lab5Controller">
+    <children>
+        <AnchorPane layoutY="74.0" prefHeight="517.0" prefWidth="767.0" style="-fx-background-color: #FFFFFF;">
+            <children>
+                <Label layoutX="319.0" layoutY="10.0" style="-fx-background-color: #FFFFFF;" text="Laboratory 5" wrapText="true">
+                    <font>
+                        <Font name="Stencil" size="18.0" />
+                    </font>
+                </Label>
+                <Button fx:id="executeBtn" layoutX="318.0" layoutY="190.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="130.0" style="-fx-background-radius: 15; -fx-background-color: #d99413; -fx-padding: 10;" text="Execute" textFill="WHITE">
+                    <font>
+                        <Font name="STHupo" size="16.0" />
+                    </font>
+                </Button>
+            <Label layoutX="26.0" layoutY="352.0" style="-fx-background-color: #FFFFFF;" text="Output" textFill="#2e3348" wrapText="true">
+               <font>
+                  <Font name="Bauhaus 93" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="homeBtn" fitHeight="25.0" fitWidth="25.0" layoutX="13.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@back.jpg" />
+               </image>
+            </ImageView>
+            <ChoiceBox fx:id="functionNumber" layoutX="187.0" layoutY="61.0" prefHeight="26.0" prefWidth="160.0" style="-fx-background-color: #fafafa; -fx-border-color: silver;" />
+            <Label layoutX="30.0" layoutY="66.0" prefHeight="18.0" prefWidth="142.0" text="Select function number" textFill="#2e3348">
+               <font>
+                  <Font name="Serif Regular" size="15.0" />
+               </font></Label>
+            <Label layoutX="26.0" layoutY="237.0" style="-fx-background-color: #FFFFFF;" text="Input" textFill="#2e3348" wrapText="true">
+               <font>
+                  <Font name="Bauhaus 93" size="18.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="inputDataFromUser" layoutX="46.0" layoutY="259.0" prefHeight="70.0" prefWidth="674.0">
+               <font>
+                  <Font name="Bookshelf Symbol 7" size="14.0" />
+               </font></TextArea>
+            <Label fx:id="hintForInput" layoutX="111.0" layoutY="236.0" prefHeight="15.0" prefWidth="151.0" textFill="#2e3348">
+               <font>
+                  <Font name="Tempus Sans ITC" size="13.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="descriptionField" editable="false" layoutX="46.0" layoutY="132.0" prefHeight="34.0" prefWidth="674.0">
+               <font>
+                  <Font name="Baskerville Old Face" size="16.0" />
+               </font>
+            </TextArea>
+            <Label layoutX="26.0" layoutY="112.0" style="-fx-background-color: #FFFFFF;" text="Description" textFill="#2e3348" wrapText="true">
+               <font>
+                  <Font name="Bauhaus 93" size="18.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="outputLabel" editable="false" layoutX="46.0" layoutY="374.0" prefHeight="98.0" prefWidth="674.0">
+               <font>
+                  <Font size="14.0" />
+               </font></TextArea>
+            <ChoiceBox fx:id="selectionSymbol" layoutX="622.0" layoutY="61.0" prefHeight="26.0" prefWidth="44.0" style="-fx-background-color: #fafafa; -fx-border-color: silver;" />
+            <Label layoutX="421.0" layoutY="66.0" prefHeight="18.0" prefWidth="190.0" text="Select symbol for function № 4" textFill="#2e3348">
+               <font>
+                  <Font name="Serif Regular" size="15.0" />
+               </font></Label>
+            </children>
+        </AnchorPane>
+      <Label layoutX="278.0" prefHeight="69.0" prefWidth="210.0" text="Сourse work" textFill="#fcfffd">
+         <font>
+            <Font name="Comic Sans MS" size="36.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

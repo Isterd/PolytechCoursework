@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="767.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.course.Lab1Controller">
+    <children>
+        <AnchorPane layoutX="-1.0" layoutY="69.0" prefHeight="520.0" prefWidth="767.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #534c4c; -fx-background-radius: 5;">
+            <children>
+            <Label layoutX="310.0" layoutY="15.0" style="-fx-background-color: #FFFFFF;" text="Laboratory 1" wrapText="true">
+               <font>
+                  <Font name="Copperplate Gothic Light" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="executeBtn" layoutX="296.0" layoutY="272.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="159.0" style="-fx-background-radius: 20; -fx-background-color: #d99413; -fx-padding: 10;" text="Execute" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="19.0" />
+               </font>
+            </Button>
+            <Label layoutX="169.0" layoutY="357.0" prefHeight="34.0" prefWidth="119.0" style="-fx-background-color: #FFFFFF;" text="Current output:" textFill="#2e3348" wrapText="true">
+               <font>
+                  <Font name="Corbel" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="homeBtn" fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@back.jpg" />
+               </image>
+            </ImageView>
+            <TextField fx:id="nameField" accessibleText="Name" layoutX="205.0" layoutY="102.0" prefHeight="34.0" prefWidth="342.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <effect>
+                  <DropShadow blurType="ONE_PASS_BOX" height="18.66" radius="8.83" width="18.66">
+                     <color>
+                        <Color red="0.6000000238418579" green="0.5822222232818604" blue="0.5822222232818604" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <font>
+                  <Font name="Century" size="15.0" />
+               </font></TextField>
+            <Label layoutX="283.0" layoutY="57.0" prefHeight="34.0" prefWidth="188.0" style="-fx-background-color: #FFFFFF;" text="Enter the hero's name" textFill="#2e3348" wrapText="true">
+               <font>
+                  <Font name="Comic Sans MS" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="317.0" layoutY="151.0" prefHeight="34.0" prefWidth="119.0" style="-fx-background-color: #FFFFFF;" text="Select method" textFill="#2e3348" wrapText="true">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="moveSelection" layoutX="296.0" layoutY="198.0" prefHeight="28.0" prefWidth="159.0" />
+            <Text fx:id="outputText" layoutX="301.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="307.19993896484357">
+               <font>
+                  <Font name="Lucida Console" size="18.0" />
+               </font>
+            </Text>
+            </children>
+        </AnchorPane>
+        <Label layoutX="278.0" layoutY="-1.0" prefHeight="69.0" prefWidth="210.0" text="Сourse work" textFill="#fcfffd">
+            <font>
+                <Font name="Comic Sans MS" size="36.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

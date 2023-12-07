@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="767.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.course.Lab4Controller">
+    <children>
+        <AnchorPane layoutY="74.0" prefHeight="518.0" prefWidth="767.0" style="-fx-background-color: #FFFFFF;">
+            <children>
+                <Label layoutX="305.0" layoutY="9.0" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: #FFFFFF;" text="Laboratory 4" wrapText="true">
+                    <font>
+                        <Font name="Forte" size="24.0" />
+                    </font>
+                </Label>
+                <Button fx:id="executeBtn" layoutX="305.0" layoutY="215.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="130.0" style="-fx-background-radius: 15; -fx-background-color: #d99413; -fx-padding: 10;" text="Execute">
+                    <font>
+                        <Font name="Bookman Old Style" size="15.0" />
+                    </font>
+                </Button>
+            <Label layoutX="51.0" layoutY="259.0" style="-fx-background-color: #FFFFFF;" text="Output" textFill="#2e3348" wrapText="true">
+               <font>
+                  <Font name="Imprint MT Shadow" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="homeBtn" fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@back.jpg" />
+               </image>
+            </ImageView>
+            <TextArea fx:id="dictionaryPathInput" layoutX="54.0" layoutY="80.0" prefHeight="36.0" prefWidth="659.0">
+               <font>
+                  <Font name="Gadugi" size="14.0" />
+               </font>
+            </TextArea>
+            <TextArea fx:id="textPathInput" layoutX="54.0" layoutY="147.0" prefHeight="22.0" prefWidth="659.0">
+               <font>
+                  <Font name="Gadugi" size="14.0" />
+               </font></TextArea>
+            <Label layoutX="53.0" layoutY="68.0" text="Enter dictionary path" textFill="#2e3348">
+               <font>
+                  <Font name="Britannic Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="135.0" text="Enter text file to translate pathe" textFill="#2e3348">
+               <font>
+                  <Font name="Britannic Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="outputLabel" editable="false" layoutX="54.0" layoutY="281.0" prefHeight="197.0" prefWidth="659.0">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font></TextArea>
+            </children>
+        </AnchorPane>
+      <Label layoutX="263.0" prefHeight="69.0" prefWidth="210.0" text="Сourse work" textFill="#fcfffd">
+         <font>
+            <Font name="Comic Sans MS" size="36.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
